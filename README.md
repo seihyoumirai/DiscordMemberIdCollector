@@ -1,0 +1,2 @@
+# AutoDIscordServerMemberIdCollecter
+自動でサーバーに参加しているユーザーのIDを収集します。
