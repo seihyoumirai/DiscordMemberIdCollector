@@ -1,4 +1,4 @@
-# Auto Discord Server Member Id Collecter
+# Auto Discord Server Member Id Collector
 
 自動でサーバーに参加しているユーザーのIDを収集します。
 
