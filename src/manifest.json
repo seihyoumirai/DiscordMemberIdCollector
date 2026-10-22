@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Discord Member ID Collector",
+  "version": "1.0.0",
+  "author": "SeihyouMirai",
+  "description": "Discordで現在表示しているメンバーIDを収集して保存します。",
+  "permissions": ["scripting"],
+  "host_permissions": [
+    "https://discord.com/*",
+    "https://*.discord.com/*"
+  ],
+  "icons": {
+    "16": "logo/logo.png",
+    "32": "logo/logo.png",
+    "48": "logo/logo.png",
+    "128": "logo/logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://discord.com/*",
+        "https://www.discord.com/*",
+        "https://canary.discord.com/*",
+        "https://ptb.discord.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ]
+}
